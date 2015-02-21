@@ -1,10 +1,374 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>Benjalak</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div class="toolbar"></div>
+        <div class="toolbar-containner">
+            <input id="input">
+            <button class="search"><img class="imgsearch" src="search.png"></button>
+            <div class="logo-containner">
+                <img class="logo" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/YouTube_logo_2013.svg/2000px-YouTube_logo_2013.svg.png">
+            </div>
+        </div>
+        
+        
+        <input class="upload" value="อัปโหลด" type="submit">
+        <div class="sitebar">
+            <div id="list">
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list">
+                <div id="song"><h3>อยากรู้ใจตัวเอง</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list1">
+                <div id="song1"><h3>อยากบอกรัก</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list2">
+                <div id="song2"><h3>Good boy.</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list3">
+                <div id="song3"><h3>.........</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list4">
+                <div id="song4"><h3>.........</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list5">
+                <div id="song5"><h3>.........</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list6">
+                <div id="song6"><h3>.........</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list7">
+                <div id="song7"><h3>.........</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            <div id="list8">
+                <div id="song8"><h3>.........</h3></div>
+                <div id="containner-list1"></div>
+            </div>
+            
+        </div>
+        <div class="containner">
+            <img class="imgvideo" src="video.PNG">
+        </div>
+        <input class="login" value="ลงชื่อเข้าใช้" type="submit">
+        <div class="watch-header"></div>
+        <div class="action-panel-detail"></div>
+        <div class="watch-discussion" ></div>
+        <div class="footer">
+            <div id="footter-containner">
+                <img id="imglogofoot" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/YouTube_logo_2013.svg/2000px-YouTube_logo_2013.svg.png">
+                <input id="btnthanlanguage" type="submit" value="ภาษา:ไทย">
+                <input id="btnthai" type="submit" value="ประเทศ:ไทย">
+                <input id="btnsecurity" type="submit" value="ความปลอดภัย">
+                <input id="btnhistory" type="submit" value="ประวัติการเข้าชม">
+                <input id="btnhelp" type="submit" value="ช่วยเหลือ">
+            </div>
+        </div>
+       
+        
+       
+     
+        
+        
+        
+        
+        
+        <style>
+            body{
+                background-color: #f8f8f8;
+            }
+            .toolbar{
+               background-color: white;
+               width: 1349px;
+               height: 50px;
+               position: fixed;
+               top: 0px;
+               left: 0px;
+               z-index: 9;
+            }
+            .toolbar-containner{
+                background-color:white;
+                width: 1289px;
+                height: 34px;
+                position: absolute;
+                right: 50px;
+                z-index: 10;
+            }
+            #input{ 
+                width: 581px;
+                height: 23px;
+                position:fixed;
+                top: 10px;
+                right: 534px;
+                z-index: 10;
+              
+              
+            }
+            .logo-containner{
+                background: white;
+                width: 200px;
+                height: 29px;
+                position: fixed;
+                top: 9px;
+                left: 30px; 
+              
+            }
+            .search{          
+                width: 67px;
+                height: 29px;
+                position: fixed;
+                top: 10px;
+                right: 468px;
+                z-index: 10;
+            }
+            .upload{
+                width: 73px;
+                height: 28px;
+                position: fixed;
+                top: 10px;
+                right: 126px;
+                z-index: 10;
+                font-weight: bold;
+                font-size: 11px;
+                
+            }
+            .imgsearch{
+                width: 18px;
+                height: 19px;
+                position: fixed;
+                top: 16px;
+                right: 492px;
+            }
+           
+            
+            .sitebar{
+                background: white;
+                width: 416px;
+                height: 1000px;
+                position: absolute;
+                top: 62px;
+                right: 142px;
+            }
+            .containner{
+                background: gray;
+                width: 640px;
+                height: 387px;
+                position: absolute;
+                top: 62px;
+                left: 140px;
+            }
+            .login{
+                width: 81px;
+                height: 28px;
+                position: fixed;
+                top: 10px;
+                right: 30px;
+                background: #167ac6;
+                border-color: #167ac6;
+                color: #fff;
+                z-index: 10;
+                font-weight: bold;
+                font-size: 11px;
+            }
+            .watch-header{
+                width: 640px;
+                height: 152px;
+                position: absolute;
+                background: white;
+                top: 460px;
+                left: 140px;
+            }
+            .action-panel-detail{
+                width: 640px;
+                height: 130px;
+                background: white;
+                position: absolute;
+                top: 623px;
+                left: 140px;
+                
+                
+            }
+           .logo{
+             width: 72px;
+             height: 30px;
+             position: fixed;
+            
+                
+            }
+            .watch-discussion{
+                width: 640px;
+                height: 612px;
+                background: white;
+                position: absolute;
+                top: 765px;
+                left: 140px;
+                 
+            }
+            .footer{
+                width: 1349px;
+                height: 141px;
+                top: 1500px;
+                position: absolute;
+                left: 0px;
+                background-color: white;
+              
+            }
+            .video{
+               width: 640px;
+                height: 387px;
+                position: absolute;
+                top: -5px;
+                left: 0px;
+              
+            }
+            #list{
+                width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: -1px;
+                position: absolute;
+                
+            }
+            #containner-list1{
+                background: #f8f8f8;
+                top: 5px;
+                left: 10px;
+                width: 120px;
+                height: 85px;
+                position: absolute;
+            }
+            #list1{
+               width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: 93px;
+                position: absolute;  
+            }
+            #list2{
+               width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: 187px;
+                position: absolute;  
+            }
+            #list3{
+               width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: 281px;
+                position: absolute;  
+            }
+            #list4{
+               width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: 375px;
+                position: absolute;  
+            }
+             #list5{
+               width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: 469px;
+                position: absolute;  
+            }
+            #list6{
+               width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: 470px;
+                position: absolute;  
+            }
+            #list7{
+               width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: 563px;
+                position: absolute;  
+            }
+            #list8{
+               width: 391px;
+                height: 94px;
+                border-bottom: solid 1px #f8f8f8;
+                top: 657px;
+                position: absolute;  
+            }
+            #song,#song1,#song2,#song3,#song4,#song5,#song6,#song7,#song8{
+                position: absolute;
+                left: 140px;
+                top: -5px;
+            }
+            #footter-containner{
+                
+                width: 1244px;
+                height: 47px;
+                left: 50px;
+                position: absolute;
+                top: 10px;
+                border-bottom:  solid 2px #f8f8f8;
+                    
+            }
+            #imglogofoot{
+                width: 72px;
+                height: 30px;
+                position: absolute;
+                top: 5px;
+            }
+            #btnthanlanguage{
+                width: 125px;
+                height: 28px;
+                top: 5px;
+                position: absolute;
+                left: 102px;
+                
+            }
+            #btnthai{
+                width: 125px;
+                height: 28px;
+                top: 5px;
+                position: absolute;
+                left: 237px;
+            }
+            #btnsecurity{
+                width: 125px;
+                height: 28px;
+                top: 5px;
+                position: absolute;
+                left: 372px;
+            }
+            #btnhistory{
+                width: 125px;
+                height: 28px;
+                top: 5px;
+                position: absolute;
+                left: 507px;
+            }
+            #btnhelp{
+                width: 125px;
+                height: 28px;
+                top: 5px;
+                position: absolute;
+                left: 642px;
+            }
+        </style>
     </body>
 </html>
